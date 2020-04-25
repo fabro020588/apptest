@@ -1,4 +1,10 @@
 # Docker
+- task: CmdLine@2
+  inputs:
+    script: |
+      git checkout master
+      git add --all
+      git push https://e58163e0386ba3bac83dc93253da73270a7098a3@github.com/fabro020588/apptest.git
 # Build a Docker image 
 # https://docs.microsoft.com/azure/devops/pipelines/languages/docker
 
